@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="ddd">对对对</button>
+    <button id="cco">粗糙哦</button>
+    <img src="images/1.gif" alt="" title="这逼">
+    <script>
+        //修改里面属性src
+        //1，获取元素
+        var ddd = document.getElementById('ddd');
+        var cco = document.getElementById('cco');
+        var img = document.querySelector('img');
+        //，注册事件
+        ddd.onclick = function() {
+            img.src = 'images/2.gif';
+            img.title = '我要';
+        }
+        cco.onclick = function() {
+            img.src = 'images/1.gif';
+            img.title = '这逼';
+        }
+    </script>
+</body>
+
+</html>
